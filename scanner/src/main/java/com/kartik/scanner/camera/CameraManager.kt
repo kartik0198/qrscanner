@@ -134,7 +134,5 @@ class CameraManager(
 
     companion object {
         private const val TAG = "CameraXBasic"
-        const val FLASH_MODE_ON = true
-        const val FLASH_MODE_OFF = false
     }
 }

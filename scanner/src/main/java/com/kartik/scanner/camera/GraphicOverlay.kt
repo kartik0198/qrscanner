@@ -54,6 +54,7 @@ open class GraphicOverlay(context: Context, attrs: AttributeSet?) :
     override fun draw(canvas: Canvas) {
         super.draw(canvas)
         boxRect?.let {
+            setLayerType(LAYER_TYPE_SOFTWARE, null)
             // Draws the dark background scrim and leaves the box area clear.
             canvas.drawRect(0f, 0f, canvas.width.toFloat(), canvas.height.toFloat(), scrimPaint)
             // As the stroke is always centered, so erase twice with FILL and STROKE respectively to clear
